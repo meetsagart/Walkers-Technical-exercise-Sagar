@@ -1,0 +1,35 @@
+﻿@model WalkersWebApp.Models.ResultView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    ViewData["Title"] = "Walkers Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+
+</div>
+
+<div class="row">
+    <div>
+        <h2>Walkers Technical Assesment</h2>
+    </div>
+</div>
+<form action="Execute" method="post">
+    <table style="width:100%;">
+        <tr><td>Please enter Integer value between 1 and 200</td><td><input id="txtIntegerVal" type="text" name="inputval" /></td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td>&nbsp;</td><td><input type="submit" value="Submit" /></td><td>&nbsp;</td></tr>
+    </table>
+</form>
+<div class="row">
+    <h3>
+        <ul>
+            
+
+            </ul>
+
+        </h3>
+    </div>

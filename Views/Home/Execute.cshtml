@@ -1,0 +1,54 @@
+﻿@model WalkersWebApp.Models.ResultView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    ViewData["Title"] = "Walkers Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+
+</div>
+
+<div class="row">
+    <div>
+        <h2>Walkers Technical Assesment Results</h2>
+    </div>
+</div>
+
+<div class="row">
+    <h3>
+        <ul>
+
+
+            @foreach (var item in ViewBag.Results)
+            {
+            <li>
+                @if(@item.Contains("walkers assessment"))
+                     {
+                            <span style="color:blue">@item</span>
+                     }
+                     else if(@item.Contains("walkers"))
+                     {
+                            <span style="color:green">@item</span>
+                     }
+                else if(@item.Contains("assessment"))
+                     {
+                            <span style="color:red">@item</span>
+                     }
+                else {
+                            <span style="color:black">@item</span>
+                     }
+            </li>
+            }
+
+           
+                
+
+
+        </ul>
+
+    </h3>
+</div>
