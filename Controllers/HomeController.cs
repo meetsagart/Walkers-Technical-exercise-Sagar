@@ -81,7 +81,20 @@ namespace WalkersWebApp.Controllers
                     string amend = "";
                     num = num + 1;
 
-                   
+                    if (num % 3 == 0 && num % 5 == 0)
+                    {
+                        amend = num.ToString() + " - walkers assessment";
+                    }
+                    else if (num % 3 == 0)
+                    {
+                        amend = num.ToString() + " - walkers";
+                    }
+                    else if (num % 5 == 0)
+                    {
+                        amend = num.ToString() + " - assessment";
+                    }
+                    else
+                        amend = num.ToString();
 
                     results.Add(amend);
                 }
